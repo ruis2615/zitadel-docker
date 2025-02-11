@@ -1,0 +1,15 @@
+Database:
+  postgres:
+    Host: 'db'
+    Port: 5432
+    Database: zitadel
+    User:
+      Username: 'zitadel_user'
+      Password: 'zitadelUser'
+      SSL:
+        Mode: 'disable'
+    Admin:
+      Username: 'root'
+      Password: 'zitadelRoot'
+      SSL:
+        Mode: 'disable'
