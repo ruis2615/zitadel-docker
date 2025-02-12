@@ -4,12 +4,12 @@ services:
     networks:
       - "zitadel"
     image: "ghcr.io/zitadel/zitadel:latest"
-    command: 'start-from-init --config /zitadel-config.yaml --steps /zitadel-db-init.yaml --masterkey /zitadel-masterKey --tlsMode disabled'
+    command: 'start-from-init --config /zitadel-config.yaml --config /zitadel-db-init.yaml --masterkeyFile /zitadel-masterKey --tlsMode disabled'
     ports:
       - "8080:8080"
     volumes:
       - "./zitadel-masterKey:/zitadel-masterKey:ro"
-      - "./zitadel-config.yaml:/example-zitadel-config.yaml:ro"
+      - "./zitadel-config.yaml:/zitadel-config.yaml:ro"
       - "./zitadel-db-init.yaml:/zitadel-db-init.yaml:ro"
 
   db:
