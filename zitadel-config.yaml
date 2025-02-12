@@ -3,12 +3,6 @@
 Log:
   Level: 'info'
 
-ExternalDomain: "zitadel.tail041a7.ts.net"
+ExternalDomain: "localhost"
 ExternalPort: 8080
 ExternalSecure: false
-
-FirstInstance:
-  Org:
-    Human:
-      Username: 'root'
-      Password: 'RootPassword1!'

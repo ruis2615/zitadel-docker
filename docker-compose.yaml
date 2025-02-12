@@ -17,7 +17,7 @@ services:
     restart: always
     environment:
       - POSTGRES_USER=root
-      - POSTGRES_PASSWORD=Vz7fYg3nTLwEt9Lx8JTU
+      - POSTGRES_PASSWORD=zitadelRoot
     networks:
       - 'zitadel'
     healthcheck:
